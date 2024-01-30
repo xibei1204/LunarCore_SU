@@ -7,6 +7,7 @@ import emu.lunarcore.util.Position;
 
 public class GameConstants {
     public static String VERSION = "1.6.0";
+    
 
     public static final ZoneOffset CURRENT_ZONEOFFSET = ZoneOffset.systemDefault().getRules().getOffset(Instant.now());
     public static final int CURRENT_TIMEZONE = CURRENT_ZONEOFFSET.getTotalSeconds() / 3600;
