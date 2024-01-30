@@ -9,13 +9,13 @@ public class PacketSyncRogueFinishScNotify extends BasePacket {
 
     public PacketSyncRogueFinishScNotify(Player player) {
         super(CmdId.SyncRogueFinishScNotify);
-        
+
         var data = SyncRogueFinishScNotify.newInstance();
-        
+
         if (player.getRogueInstance() != null) {
-            data.setFinishInfo(player.getRogueInstance().toFinishInfoProto());
+            data.setRogueFinishInfo(player.getRogueInstance().toFinishInfoProto());
         }
-        
+
         this.setData(data);
     }
 }

@@ -19,9 +19,9 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
      */
-    private final RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo rogueVirtualItemInfo = RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo.newInstance();
+    private final RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo itemInfo = RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo.newInstance();
 
     private SyncRogueVirtualItemInfoScNotify() {
     }
@@ -34,39 +34,39 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
-     * @return whether the rogueVirtualItemInfo field is set
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
+     * @return whether the itemInfo field is set
      */
-    public boolean hasRogueVirtualItemInfo() {
+    public boolean hasItemInfo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
      * @return this
      */
-    public SyncRogueVirtualItemInfoScNotify clearRogueVirtualItemInfo() {
+    public SyncRogueVirtualItemInfoScNotify clearItemInfo() {
       bitField0_ &= ~0x00000001;
-      rogueVirtualItemInfo.clear();
+      itemInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableRogueVirtualItemInfo()} if you want to modify it.
+     * Use {@link #getMutableItemInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo getRogueVirtualItemInfo() {
-      return rogueVirtualItemInfo;
+    public RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo getItemInfo() {
+      return itemInfo;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -74,20 +74,20 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo getMutableRogueVirtualItemInfo() {
+    public RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo getMutableItemInfo() {
       bitField0_ |= 0x00000001;
-      return rogueVirtualItemInfo;
+      return itemInfo;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item_info = 14;</code>
-     * @param value the rogueVirtualItemInfo to set
+     * <code>optional .RogueVirtualItemInfo item_info = 4;</code>
+     * @param value the itemInfo to set
      * @return this
      */
-    public SyncRogueVirtualItemInfoScNotify setRogueVirtualItemInfo(
+    public SyncRogueVirtualItemInfoScNotify setItemInfo(
         final RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo value) {
       bitField0_ |= 0x00000001;
-      rogueVirtualItemInfo.copyFrom(value);
+      itemInfo.copyFrom(value);
       return this;
     }
 
@@ -96,7 +96,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        rogueVirtualItemInfo.copyFrom(other.rogueVirtualItemInfo);
+        itemInfo.copyFrom(other.itemInfo);
       }
       return this;
     }
@@ -108,8 +108,8 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRogueVirtualItemInfo()) {
-        getMutableRogueVirtualItemInfo().mergeFrom(other.rogueVirtualItemInfo);
+      if (other.hasItemInfo()) {
+        getMutableItemInfo().mergeFrom(other.itemInfo);
       }
       return this;
     }
@@ -121,7 +121,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      rogueVirtualItemInfo.clear();
+      itemInfo.clear();
       return this;
     }
 
@@ -132,7 +132,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      rogueVirtualItemInfo.clearQuick();
+      itemInfo.clearQuick();
       return this;
     }
 
@@ -146,14 +146,14 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       }
       SyncRogueVirtualItemInfoScNotify other = (SyncRogueVirtualItemInfoScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasRogueVirtualItemInfo() || rogueVirtualItemInfo.equals(other.rogueVirtualItemInfo));
+        && (!hasItemInfo() || itemInfo.equals(other.itemInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 114);
-        output.writeMessageNoTag(rogueVirtualItemInfo);
+        output.writeRawByte((byte) 34);
+        output.writeMessageNoTag(itemInfo);
       }
     }
 
@@ -161,7 +161,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueVirtualItemInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(itemInfo);
       }
       return size;
     }
@@ -173,9 +173,9 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 114: {
-            // rogueVirtualItemInfo
-            input.readMessage(rogueVirtualItemInfo);
+          case 34: {
+            // itemInfo
+            input.readMessage(itemInfo);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -200,7 +200,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.rogueVirtualItemInfo, rogueVirtualItemInfo);
+        output.writeMessage(FieldNames.itemInfo, itemInfo);
       }
       output.endObject();
     }
@@ -212,11 +212,11 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1066755410:
-          case 1452147457: {
-            if (input.isAtField(FieldNames.rogueVirtualItemInfo)) {
+          case 1177195105:
+          case -2141481382: {
+            if (input.isAtField(FieldNames.itemInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(rogueVirtualItemInfo);
+                input.readMessage(itemInfo);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -279,7 +279,7 @@ public final class SyncRogueVirtualItemInfoScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName rogueVirtualItemInfo = FieldName.forField("rogueVirtualItemInfo", "rogue_virtual_item_info");
+      static final FieldName itemInfo = FieldName.forField("itemInfo", "item_info");
     }
   }
 }

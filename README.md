@@ -6,6 +6,8 @@
 [EN](README.md) | [简中](docs/README_zh-CN.md) | [繁中](docs/README_zh-TW.md) | [JP](docs/README_ja-JP.md) | [RU](docs/README_ru-RU.md) | [FR](docs/README_fr-FR.md) | [KR](docs/README_ko-KR.md)
 
 **Attention:** For any extra support, questions, or discussions, check out our [Discord](https://discord.gg/cfPKJ6N5hw).
+**WIP:** This branch is only for reference. The Simulated Universe is fixed with some problems, and the code is not clean, and some testing log is not removed.But at lease you can play the game smoothly.(Event is not working yet, DO NOT GO TO THE EVENT ROOM!!!)
+**Attention:** You can use /rogue command to give curios, blessings, or enter the next room in the simulated universe, but the effect of curios is not implemented, please be careful.
 
 ### Notable features
 - Basic game features: Logging in, team setup, inventory, basic scene/entity management
@@ -82,4 +84,5 @@ Server commands can be run in the server console or in-game. There is a dummy us
 /spawn [monster/prop id] x[amount] s[stage id]. Spawns a monster or prop near the targeted player.
 /unstuck @[player id]. Unstucks an offline player if they're in a scene that doesn't load.
 /worldlevel [world level]. Sets the targeted player's equilibrium level.
+/rogue @[player id] <join [areaId] [aeonId]>/<leave>/<room [roomId]>/<buff [buffCount](optional)>/<buffId [buffId]>/<miracle [miracleCount](optional)>/<miracleId [miracleId]> Give curios, blessings, or enter the next room in the simulated universe.
 ```

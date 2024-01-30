@@ -19,14 +19,29 @@ public final class RogueInfoDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      */
     private final RogueSeasonInfoOuterClass.RogueSeasonInfo rogueSeasonInfo = RogueSeasonInfoOuterClass.RogueSeasonInfo.newInstance();
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      */
     private final RogueScoreRewardInfoOuterClass.RogueScoreRewardInfo rogueScoreInfo = RogueScoreRewardInfoOuterClass.RogueScoreRewardInfo.newInstance();
+
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     */
+    private final OONJMMOMFHLOuterClass.OONJMMOMFHL oKAHBMNGJEB = OONJMMOMFHLOuterClass.OONJMMOMFHL.newInstance();
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     */
+    private final DMBBFODODOFOuterClass.DMBBFODODOF eEFGNNFCDNJ = DMBBFODODOFOuterClass.DMBBFODODOF.newInstance();
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     */
+    private final JHAHJFNNGHIOuterClass.JHAHJFNNGHI cKJPPDKJIOH = JHAHJFNNGHIOuterClass.JHAHJFNNGHI.newInstance();
 
     private RogueInfoData() {
     }
@@ -39,7 +54,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      * @return whether the rogueSeasonInfo field is set
      */
     public boolean hasRogueSeasonInfo() {
@@ -47,7 +62,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      * @return this
      */
     public RogueInfoData clearRogueSeasonInfo() {
@@ -57,7 +72,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -71,7 +86,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -85,7 +100,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueSeasonInfo rogue_season_info = 6;</code>
+     * <code>optional .RogueSeasonInfo rogue_season_info = 3;</code>
      * @param value the rogueSeasonInfo to set
      * @return this
      */
@@ -96,7 +111,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      * @return whether the rogueScoreInfo field is set
      */
     public boolean hasRogueScoreInfo() {
@@ -104,7 +119,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      * @return this
      */
     public RogueInfoData clearRogueScoreInfo() {
@@ -114,7 +129,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -128,7 +143,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -142,7 +157,7 @@ public final class RogueInfoDataOuterClass {
     }
 
     /**
-     * <code>optional .RogueScoreRewardInfo rogue_score_info = 15;</code>
+     * <code>optional .RogueScoreRewardInfo rogue_score_info = 4;</code>
      * @param value the rogueScoreInfo to set
      * @return this
      */
@@ -153,6 +168,177 @@ public final class RogueInfoDataOuterClass {
       return this;
     }
 
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     * @return whether the oKAHBMNGJEB field is set
+     */
+    public boolean hasOKAHBMNGJEB() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     * @return this
+     */
+    public RogueInfoData clearOKAHBMNGJEB() {
+      bitField0_ &= ~0x00000004;
+      oKAHBMNGJEB.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableOKAHBMNGJEB()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public OONJMMOMFHLOuterClass.OONJMMOMFHL getOKAHBMNGJEB() {
+      return oKAHBMNGJEB;
+    }
+
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public OONJMMOMFHLOuterClass.OONJMMOMFHL getMutableOKAHBMNGJEB() {
+      bitField0_ |= 0x00000004;
+      return oKAHBMNGJEB;
+    }
+
+    /**
+     * <code>optional .OONJMMOMFHL OKAHBMNGJEB = 7;</code>
+     * @param value the oKAHBMNGJEB to set
+     * @return this
+     */
+    public RogueInfoData setOKAHBMNGJEB(final OONJMMOMFHLOuterClass.OONJMMOMFHL value) {
+      bitField0_ |= 0x00000004;
+      oKAHBMNGJEB.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     * @return whether the eEFGNNFCDNJ field is set
+     */
+    public boolean hasEEFGNNFCDNJ() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     * @return this
+     */
+    public RogueInfoData clearEEFGNNFCDNJ() {
+      bitField0_ &= ~0x00000008;
+      eEFGNNFCDNJ.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableEEFGNNFCDNJ()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public DMBBFODODOFOuterClass.DMBBFODODOF getEEFGNNFCDNJ() {
+      return eEFGNNFCDNJ;
+    }
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public DMBBFODODOFOuterClass.DMBBFODODOF getMutableEEFGNNFCDNJ() {
+      bitField0_ |= 0x00000008;
+      return eEFGNNFCDNJ;
+    }
+
+    /**
+     * <code>optional .DMBBFODODOF EEFGNNFCDNJ = 10;</code>
+     * @param value the eEFGNNFCDNJ to set
+     * @return this
+     */
+    public RogueInfoData setEEFGNNFCDNJ(final DMBBFODODOFOuterClass.DMBBFODODOF value) {
+      bitField0_ |= 0x00000008;
+      eEFGNNFCDNJ.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     * @return whether the cKJPPDKJIOH field is set
+     */
+    public boolean hasCKJPPDKJIOH() {
+      return (bitField0_ & 0x00000010) != 0;
+    }
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     * @return this
+     */
+    public RogueInfoData clearCKJPPDKJIOH() {
+      bitField0_ &= ~0x00000010;
+      cKJPPDKJIOH.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableCKJPPDKJIOH()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public JHAHJFNNGHIOuterClass.JHAHJFNNGHI getCKJPPDKJIOH() {
+      return cKJPPDKJIOH;
+    }
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public JHAHJFNNGHIOuterClass.JHAHJFNNGHI getMutableCKJPPDKJIOH() {
+      bitField0_ |= 0x00000010;
+      return cKJPPDKJIOH;
+    }
+
+    /**
+     * <code>optional .JHAHJFNNGHI CKJPPDKJIOH = 11;</code>
+     * @param value the cKJPPDKJIOH to set
+     * @return this
+     */
+    public RogueInfoData setCKJPPDKJIOH(final JHAHJFNNGHIOuterClass.JHAHJFNNGHI value) {
+      bitField0_ |= 0x00000010;
+      cKJPPDKJIOH.copyFrom(value);
+      return this;
+    }
+
     @Override
     public RogueInfoData copyFrom(final RogueInfoData other) {
       cachedSize = other.cachedSize;
@@ -160,6 +346,9 @@ public final class RogueInfoDataOuterClass {
         bitField0_ = other.bitField0_;
         rogueSeasonInfo.copyFrom(other.rogueSeasonInfo);
         rogueScoreInfo.copyFrom(other.rogueScoreInfo);
+        oKAHBMNGJEB.copyFrom(other.oKAHBMNGJEB);
+        eEFGNNFCDNJ.copyFrom(other.eEFGNNFCDNJ);
+        cKJPPDKJIOH.copyFrom(other.cKJPPDKJIOH);
       }
       return this;
     }
@@ -176,6 +365,15 @@ public final class RogueInfoDataOuterClass {
       if (other.hasRogueScoreInfo()) {
         getMutableRogueScoreInfo().mergeFrom(other.rogueScoreInfo);
       }
+      if (other.hasOKAHBMNGJEB()) {
+        getMutableOKAHBMNGJEB().mergeFrom(other.oKAHBMNGJEB);
+      }
+      if (other.hasEEFGNNFCDNJ()) {
+        getMutableEEFGNNFCDNJ().mergeFrom(other.eEFGNNFCDNJ);
+      }
+      if (other.hasCKJPPDKJIOH()) {
+        getMutableCKJPPDKJIOH().mergeFrom(other.cKJPPDKJIOH);
+      }
       return this;
     }
 
@@ -188,6 +386,9 @@ public final class RogueInfoDataOuterClass {
       bitField0_ = 0;
       rogueSeasonInfo.clear();
       rogueScoreInfo.clear();
+      oKAHBMNGJEB.clear();
+      eEFGNNFCDNJ.clear();
+      cKJPPDKJIOH.clear();
       return this;
     }
 
@@ -200,6 +401,9 @@ public final class RogueInfoDataOuterClass {
       bitField0_ = 0;
       rogueSeasonInfo.clearQuick();
       rogueScoreInfo.clearQuick();
+      oKAHBMNGJEB.clearQuick();
+      eEFGNNFCDNJ.clearQuick();
+      cKJPPDKJIOH.clearQuick();
       return this;
     }
 
@@ -214,18 +418,33 @@ public final class RogueInfoDataOuterClass {
       RogueInfoData other = (RogueInfoData) o;
       return bitField0_ == other.bitField0_
         && (!hasRogueSeasonInfo() || rogueSeasonInfo.equals(other.rogueSeasonInfo))
-        && (!hasRogueScoreInfo() || rogueScoreInfo.equals(other.rogueScoreInfo));
+        && (!hasRogueScoreInfo() || rogueScoreInfo.equals(other.rogueScoreInfo))
+        && (!hasOKAHBMNGJEB() || oKAHBMNGJEB.equals(other.oKAHBMNGJEB))
+        && (!hasEEFGNNFCDNJ() || eEFGNNFCDNJ.equals(other.eEFGNNFCDNJ))
+        && (!hasCKJPPDKJIOH() || cKJPPDKJIOH.equals(other.cKJPPDKJIOH));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 26);
         output.writeMessageNoTag(rogueSeasonInfo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 122);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(rogueScoreInfo);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeRawByte((byte) 58);
+        output.writeMessageNoTag(oKAHBMNGJEB);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 82);
+        output.writeMessageNoTag(eEFGNNFCDNJ);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeRawByte((byte) 90);
+        output.writeMessageNoTag(cKJPPDKJIOH);
       }
     }
 
@@ -238,6 +457,15 @@ public final class RogueInfoDataOuterClass {
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(rogueScoreInfo);
       }
+      if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(oKAHBMNGJEB);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(eEFGNNFCDNJ);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        size += 1 + ProtoSink.computeMessageSizeNoTag(cKJPPDKJIOH);
+      }
       return size;
     }
 
@@ -248,19 +476,46 @@ public final class RogueInfoDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 50: {
+          case 26: {
             // rogueSeasonInfo
             input.readMessage(rogueSeasonInfo);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 122) {
+            if (tag != 34) {
               break;
             }
           }
-          case 122: {
+          case 34: {
             // rogueScoreInfo
             input.readMessage(rogueScoreInfo);
             bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // oKAHBMNGJEB
+            input.readMessage(oKAHBMNGJEB);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 82) {
+              break;
+            }
+          }
+          case 82: {
+            // eEFGNNFCDNJ
+            input.readMessage(eEFGNNFCDNJ);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 90) {
+              break;
+            }
+          }
+          case 90: {
+            // cKJPPDKJIOH
+            input.readMessage(cKJPPDKJIOH);
+            bitField0_ |= 0x00000010;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -288,6 +543,15 @@ public final class RogueInfoDataOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.rogueScoreInfo, rogueScoreInfo);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
+        output.writeMessage(FieldNames.oKAHBMNGJEB, oKAHBMNGJEB);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeMessage(FieldNames.eEFGNNFCDNJ, eEFGNNFCDNJ);
+      }
+      if ((bitField0_ & 0x00000010) != 0) {
+        output.writeMessage(FieldNames.cKJPPDKJIOH, cKJPPDKJIOH);
       }
       output.endObject();
     }
@@ -317,6 +581,39 @@ public final class RogueInfoDataOuterClass {
               if (!input.trySkipNullValue()) {
                 input.readMessage(rogueScoreInfo);
                 bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -1946609600: {
+            if (input.isAtField(FieldNames.oKAHBMNGJEB)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(oKAHBMNGJEB);
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -86806302: {
+            if (input.isAtField(FieldNames.eEFGNNFCDNJ)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(eEFGNNFCDNJ);
+                bitField0_ |= 0x00000008;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case -607864511: {
+            if (input.isAtField(FieldNames.cKJPPDKJIOH)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(cKJPPDKJIOH);
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -378,6 +675,12 @@ public final class RogueInfoDataOuterClass {
       static final FieldName rogueSeasonInfo = FieldName.forField("rogueSeasonInfo", "rogue_season_info");
 
       static final FieldName rogueScoreInfo = FieldName.forField("rogueScoreInfo", "rogue_score_info");
+
+      static final FieldName oKAHBMNGJEB = FieldName.forField("OKAHBMNGJEB");
+
+      static final FieldName eEFGNNFCDNJ = FieldName.forField("EEFGNNFCDNJ");
+
+      static final FieldName cKJPPDKJIOH = FieldName.forField("CKJPPDKJIOH");
     }
   }
 }

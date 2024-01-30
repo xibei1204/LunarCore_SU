@@ -10,17 +10,17 @@ public class PacketSelectRogueBuffScRsp extends BasePacket {
 
     public PacketSelectRogueBuffScRsp(RogueBuffData buff, RogueBuffSelectMenu buffSelect) {
         super(CmdId.NONE); // TODO update
-        
+
         var data = SelectRogueBuffScRsp.newInstance()
                 .setMazeBuffId(buff.getId())
                 .setMazeBuffLevel(buff.getLevel());
-        
+
         if (buffSelect != null) {
-            data.setBuffSelectInfo(buffSelect.toProto());
+            //data.setBuffSelectInfo(buffSelect.toProto());
         } else {
             data.getMutableBuffSelectInfo();
         }
-        
+
         this.setData(data);
     }
 }

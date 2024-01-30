@@ -17,13 +17,13 @@ public class EntityNpc implements GameEntity {
     @Setter private int groupId;
     @Setter private int instId;
     @Setter private int npcId;
-    
+
     private final Scene scene;
     private final Position pos;
     private final Position rot;
-    
-    @Setter private int rogueNpcId; 
-    
+
+    @Setter private int rogueNpcId;
+
     public EntityNpc(Scene scene, GroupInfo group, NpcInfo npcInfo) {
         this.scene = scene;
         this.npcId = npcInfo.getNPCID();
@@ -38,13 +38,13 @@ public class EntityNpc implements GameEntity {
         // Base npc info
         var npc = SceneNpcInfo.newInstance()
                 .setNpcId(this.getNpcId());
-        
+
         // Rogue data
         if (this.rogueNpcId > 0) {
             var rogue = NpcRogueInfo.newInstance()
                     .setRogueNpcId(this.rogueNpcId)
-                    .setDialogueGroupId(1);
-            
+                    .setBHPGGEOBJHM(false);
+
             npc.getMutableExtraInfo().setRogueInfo(rogue);
         }
 

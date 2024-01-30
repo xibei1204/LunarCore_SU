@@ -6,6 +6,8 @@
 [EN](../README.md) | [简中](README_zh-CN.md) | [繁中](README_zh-TW.md) | [JP](README_ja-JP.md) | [RU](README_ru-RU.md) | [FR](README_fr-FR.md) | [KR](README_ko-KR.md)
 
 **注意:** 如果需要任何额外的支持、问题或者讨论，请查看我们的 [Discord](https://discord.gg/cfPKJ6N5hw).
+**WIP:** 这个分支只是用来参考的。模拟宇宙已经能够游玩了，但还带有部分功能确实，而且代码有写冗杂，部分测试输出没删。但至少你可以玩基本功能。(事件还没有完成，不要去事件关卡！！！)
+**注意:** 你可以使用/rogue命令来给予奇物、祝福，或者进入下一个模拟宇宙房间，但奇物的效果还没有实现，请注意。
 
 ### 显著特点
 - 基本游戏功能：登录、队伍配置、背包、基本场景/实体管理
@@ -80,4 +82,5 @@ class Handlers
 /spawn [monster/prop id] x[amount] s[stage id]. 在目标玩家附近生成怪物或道具。
 /unstuck @[player id]. 如果离线玩家卡在不加载的场景中，解除卡住。
 /worldlevel [world level]. 设置目标玩家的均衡等级。
+/rogue 命令参考英文版本 我懒得写了
 ```

@@ -9,10 +9,10 @@ public class PacketSyncRogueBuffSelectInfoScNotify extends BasePacket {
 
     public PacketSyncRogueBuffSelectInfoScNotify(RogueBuffSelectMenu selectMenu) {
         super(CmdId.NONE); // TODO update
-        
-        var data = SyncRogueBuffSelectInfoScNotify.newInstance()
-                .setBuffSelectInfo(selectMenu.toProto());
-        
-        this.setData(data);
+
+        //var data = SyncRogueBuffSelectInfoScNotify.newInstance()
+        //        .setBuffSelectInfo(selectMenu.toProto());
+
+        //this.setData(data);
     }
 }

@@ -10,13 +10,13 @@ public class PacketStartRogueScRsp extends BasePacket {
 
     public PacketStartRogueScRsp() {
         super(CmdId.StartRogueScRsp);
-        
+
         var data = StartRogueScRsp.newInstance()
                 .setRetcode(1);
-        
+
         this.setData(data);
     }
-    
+
     @SneakyThrows
     public PacketStartRogueScRsp(Player player) {
         super(CmdId.StartRogueScRsp);
@@ -25,7 +25,7 @@ public class PacketStartRogueScRsp extends BasePacket {
                 .setRogueInfo(player.getRogueManager().toProto())
                 .setLineup(player.getCurrentLineup().toProto())
                 .setScene(player.getScene().toProto());
-        
+
         this.setData(data);
     }
 }

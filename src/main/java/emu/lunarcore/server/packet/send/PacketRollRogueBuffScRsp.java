@@ -9,15 +9,15 @@ public class PacketRollRogueBuffScRsp extends BasePacket {
 
     public PacketRollRogueBuffScRsp(RogueBuffSelectMenu selectMenu) {
         super(CmdId.NONE); // TODO update
-        
+
         var data = RollRogueBuffScRsp.newInstance();
-        
+
         if (selectMenu != null) {
-            data.setBuffSelectInfo(selectMenu.toProto());
+            //data.setBuffSelectInfo(selectMenu.toProto());
         } else {
             data.setRetcode(1);
         }
-        
+
         this.setData(data);
     }
 }

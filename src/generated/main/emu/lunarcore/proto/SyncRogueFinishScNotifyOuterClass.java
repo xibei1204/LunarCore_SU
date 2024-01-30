@@ -19,9 +19,9 @@ public final class SyncRogueFinishScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
      */
-    private final RogueFinishInfoOuterClass.RogueFinishInfo finishInfo = RogueFinishInfoOuterClass.RogueFinishInfo.newInstance();
+    private final RogueFinishInfoOuterClass.RogueFinishInfo rogueFinishInfo = RogueFinishInfoOuterClass.RogueFinishInfo.newInstance();
 
     private SyncRogueFinishScNotify() {
     }
@@ -34,39 +34,39 @@ public final class SyncRogueFinishScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
-     * @return whether the finishInfo field is set
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
+     * @return whether the rogueFinishInfo field is set
      */
-    public boolean hasFinishInfo() {
+    public boolean hasRogueFinishInfo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
      * @return this
      */
-    public SyncRogueFinishScNotify clearFinishInfo() {
+    public SyncRogueFinishScNotify clearRogueFinishInfo() {
       bitField0_ &= ~0x00000001;
-      finishInfo.clear();
+      rogueFinishInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableFinishInfo()} if you want to modify it.
+     * Use {@link #getMutableRogueFinishInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RogueFinishInfoOuterClass.RogueFinishInfo getFinishInfo() {
-      return finishInfo;
+    public RogueFinishInfoOuterClass.RogueFinishInfo getRogueFinishInfo() {
+      return rogueFinishInfo;
     }
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -74,20 +74,20 @@ public final class SyncRogueFinishScNotifyOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RogueFinishInfoOuterClass.RogueFinishInfo getMutableFinishInfo() {
+    public RogueFinishInfoOuterClass.RogueFinishInfo getMutableRogueFinishInfo() {
       bitField0_ |= 0x00000001;
-      return finishInfo;
+      return rogueFinishInfo;
     }
 
     /**
-     * <code>optional .RogueFinishInfo finish_info = 11;</code>
-     * @param value the finishInfo to set
+     * <code>optional .RogueFinishInfo rogue_finish_info = 3;</code>
+     * @param value the rogueFinishInfo to set
      * @return this
      */
-    public SyncRogueFinishScNotify setFinishInfo(
+    public SyncRogueFinishScNotify setRogueFinishInfo(
         final RogueFinishInfoOuterClass.RogueFinishInfo value) {
       bitField0_ |= 0x00000001;
-      finishInfo.copyFrom(value);
+      rogueFinishInfo.copyFrom(value);
       return this;
     }
 
@@ -96,7 +96,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        finishInfo.copyFrom(other.finishInfo);
+        rogueFinishInfo.copyFrom(other.rogueFinishInfo);
       }
       return this;
     }
@@ -107,8 +107,8 @@ public final class SyncRogueFinishScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasFinishInfo()) {
-        getMutableFinishInfo().mergeFrom(other.finishInfo);
+      if (other.hasRogueFinishInfo()) {
+        getMutableRogueFinishInfo().mergeFrom(other.rogueFinishInfo);
       }
       return this;
     }
@@ -120,7 +120,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      finishInfo.clear();
+      rogueFinishInfo.clear();
       return this;
     }
 
@@ -131,7 +131,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      finishInfo.clearQuick();
+      rogueFinishInfo.clearQuick();
       return this;
     }
 
@@ -145,14 +145,14 @@ public final class SyncRogueFinishScNotifyOuterClass {
       }
       SyncRogueFinishScNotify other = (SyncRogueFinishScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasFinishInfo() || finishInfo.equals(other.finishInfo));
+        && (!hasRogueFinishInfo() || rogueFinishInfo.equals(other.rogueFinishInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeMessageNoTag(finishInfo);
+        output.writeRawByte((byte) 26);
+        output.writeMessageNoTag(rogueFinishInfo);
       }
     }
 
@@ -160,7 +160,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(finishInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueFinishInfo);
       }
       return size;
     }
@@ -172,9 +172,9 @@ public final class SyncRogueFinishScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 90: {
-            // finishInfo
-            input.readMessage(finishInfo);
+          case 26: {
+            // rogueFinishInfo
+            input.readMessage(rogueFinishInfo);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
@@ -199,7 +199,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.finishInfo, finishInfo);
+        output.writeMessage(FieldNames.rogueFinishInfo, rogueFinishInfo);
       }
       output.endObject();
     }
@@ -211,11 +211,11 @@ public final class SyncRogueFinishScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1151198177:
-          case 1347581146: {
-            if (input.isAtField(FieldNames.finishInfo)) {
+          case -411945637:
+          case 1618565621: {
+            if (input.isAtField(FieldNames.rogueFinishInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(finishInfo);
+                input.readMessage(rogueFinishInfo);
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -276,7 +276,7 @@ public final class SyncRogueFinishScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName finishInfo = FieldName.forField("finishInfo", "finish_info");
+      static final FieldName rogueFinishInfo = FieldName.forField("rogueFinishInfo", "rogue_finish_info");
     }
   }
 }

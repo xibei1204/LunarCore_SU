@@ -8,7 +8,7 @@ public enum RogueBuffAeonType {
     BattleEventBuff (1),
     BattleEventBuffEnhance (2),
     BattleEventBuffCross (3);
-    
+
     private final int val;
 
     private RogueBuffAeonType(int value) {

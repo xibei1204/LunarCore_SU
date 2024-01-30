@@ -19,8 +19,6 @@ public class RogueMiracleExcel extends GameResource {
 
     @Override
     public void onLoad() {
-        if (IsShow && MiracleReward > 0) {
-            GameDepot.getRogueRandomMiracleList().add(this);
-        }
+        GameDepot.getRogueRandomMiracleList().add(this);
     }
 }

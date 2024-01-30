@@ -10,11 +10,11 @@ public class PacketAddRogueMiracleScNotify extends BasePacket {
 
     public PacketAddRogueMiracleScNotify(RogueMiracleData miracle, RogueMiracleSource rogueMiracleSource) {
         super(CmdId.NONE); // TODO update
-        
-        var data = AddRogueMiracleScNotify.newInstance()
-                .setRogueMiracle(miracle.toProto())
-                .setSource(rogueMiracleSource);
-        
-        this.setData(data);
+
+//        var data = AddRogueMiracleScNotify.newInstance()
+//                .setRogueMiracle(miracle.toProto())
+//                .setSource(rogueMiracleSource);
+
+//        this.setData(data);
     }
 }

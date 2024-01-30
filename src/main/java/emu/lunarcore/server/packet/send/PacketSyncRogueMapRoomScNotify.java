@@ -10,11 +10,11 @@ public class PacketSyncRogueMapRoomScNotify extends BasePacket {
 
     public PacketSyncRogueMapRoomScNotify(RogueInstance rogue, RogueRoomData room) {
         super(CmdId.SyncRogueMapRoomScNotify);
-        
+
         var data = SyncRogueMapRoomScNotify.newInstance()
                 .setMapId(rogue.getExcel().getMapId())
                 .setCurRoom(room.toProto());
-        
+
         this.setData(data);
     }
 }
